@@ -36,7 +36,7 @@ if __name__ == '__main__':
     X = train_set.values  # Shape: (891, 8)
     y = pd.read_csv('survived.csv')  # Shape after transformations: (891, 1)
     y.set_index(index, inplace=True)
-    y.drop('Id', 1, inplace=True)
+    y.drop('Unnamed: 0', 1, inplace=True)
     X_test = test_set.values  # Shape: (418, 8)
 
     X_train, X_val, y_train, y_val = train_test_split(
