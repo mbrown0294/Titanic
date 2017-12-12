@@ -8,6 +8,7 @@ from sklearn.linear_model import Lasso
 from sklearn.metrics import mean_squared_log_error
 from sklearn.model_selection import train_test_split, GridSearchCV
 
+# Best version as of 12/12/2017
 
 def grid_search(trainx, trainy, valx, valy):
     parameter_candidates = [
